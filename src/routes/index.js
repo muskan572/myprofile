@@ -3,6 +3,7 @@ import { Navbars } from "../modules/nav/navbars";
 import { PATH_DASH } from "./path";
 import { Homepage } from "../modules/home";
 import About from "../modules/about/about";
+import { Education } from "../modules/education/education";
 
 export function Router() {
   return useRoutes([
@@ -16,6 +17,7 @@ export function Router() {
           children: [
             { path: PATH_DASH.home, element: <Homepage /> },
             { path: PATH_DASH.about, element: <About /> },
+            { path: PATH_DASH.education, element: <Education /> },
           ],
         },
       ],

@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
 import About from "../about/about";
+import { Education } from "../education/education";
 
 const Homepage = () => {
   useEffect(() => {
@@ -97,6 +98,7 @@ const Homepage = () => {
         </Paper>
       </Box>
       <About />
+      <Education />
     </>
   );
 };
