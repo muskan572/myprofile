@@ -2,6 +2,7 @@ import { Navigate, Outlet, useRoutes } from "react-router-dom";
 import { Navbars } from "../modules/nav/navbars";
 import { PATH_DASH } from "./path";
 import { Homepage } from "../modules/home";
+import About from "../modules/about/about";
 
 export function Router() {
   return useRoutes([
@@ -12,7 +13,10 @@ export function Router() {
         {
           path: PATH_DASH.root,
           element: <Navbars />,
-          children: [{ path: PATH_DASH.home, element: <Homepage /> }],
+          children: [
+            { path: PATH_DASH.home, element: <Homepage /> },
+            { path: PATH_DASH.about, element: <About /> },
+          ],
         },
       ],
     },
