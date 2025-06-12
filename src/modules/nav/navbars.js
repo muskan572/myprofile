@@ -45,7 +45,8 @@ const Navbars = () => {
         position="fixed"
         elevation={scrolled ? 4 : 0}
         sx={{
-          backgroundColor: scrolled ? "#EAE5D8" : "transparent",
+          background: "linear-gradient(135deg, #FDF6EC, #F9DCC4)",
+
           boxShadow: scrolled ? "0 2px 10px rgba(0,0,0,0.1)" : "none",
           transition: "all 0.3s ease-in-out",
         }}
@@ -129,11 +130,32 @@ const Navbars = () => {
                 ))}
               </Stack>
               <Stack direction="row" sx={{ ml: 3 }}>
-                <Instagram
-                  sx={{ mx: 1, color: "#4D3C2D", cursor: "pointer" }}
-                />
-                <Facebook sx={{ mx: 1, color: "#4D3C2D", cursor: "pointer" }} />
-                <LinkedIn sx={{ mx: 1, color: "#4D3C2D", cursor: "pointer" }} />
+                <IconButton
+                  href=" https://www.instagram.com/muskan_jhedu/"
+                  target="_blank"
+                >
+                  {" "}
+                  <Instagram
+                    sx={{ mx: 1, color: "#4D3C2D", cursor: "pointer" }}
+                  />
+                </IconButton>
+
+                <IconButton
+                  href=" https://www.instagram.com/muskan_jhedu/"
+                  target="_blank"
+                >
+                  <Facebook
+                    sx={{ mx: 1, color: "#4D3C2D", cursor: "pointer" }}
+                  />
+                </IconButton>
+                <IconButton
+                  href=" https://www.linkedin.com/in/muskan-jhedu-b49a49276/"
+                  target="_blank"
+                >
+                  <LinkedIn
+                    sx={{ mx: 1, color: "#4D3C2D", cursor: "pointer" }}
+                  />
+                </IconButton>
               </Stack>
             </>
           )}
