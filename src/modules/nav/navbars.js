@@ -14,7 +14,13 @@ import {
   ListItemButton,
   ListItemText,
 } from "@mui/material";
-import { Instagram, Facebook, LinkedIn, Menu } from "@mui/icons-material";
+import {
+  Instagram,
+  Facebook,
+  LinkedIn,
+  Menu,
+  GitHub,
+} from "@mui/icons-material";
 import { useState, useEffect } from "react";
 import Person2Icon from "@mui/icons-material/Person2";
 import { Homepage } from "../home";
@@ -155,6 +161,12 @@ const Navbars = () => {
                   <LinkedIn
                     sx={{ mx: 1, color: "#4D3C2D", cursor: "pointer" }}
                   />
+                </IconButton>
+                <IconButton
+                  href=" https://github.com/muskan572"
+                  target="_blank"
+                >
+                  <GitHub sx={{ mx: 1, color: "#4D3C2D", cursor: "pointer" }} />
                 </IconButton>
               </Stack>
             </>
