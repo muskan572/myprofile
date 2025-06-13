@@ -58,8 +58,8 @@ const Homepage = () => {
             }}
           >
             <img
-              src="/assets/image/image.png"
-              alt="Muskan Jhedu"
+              src={`${process.env.PUBLIC_URL}/assets/image/image.png`}
+              alt="My Image"
               style={{
                 width: "100%",
                 height: "100%",

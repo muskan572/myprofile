@@ -29,7 +29,7 @@ const educationData = [
     title: "BCA",
     year: "2022–2025",
     percentage: "~72%",
-    board: "PSEB",
+    board: "Panjab University",
     school: "Gopichand Arya Mahilla College",
     location: "Abohar, Punjab",
     icon: <LaptopChromebookIcon sx={{ fontSize: 50, color: "#8B4513" }} />,
