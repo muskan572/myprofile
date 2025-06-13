@@ -28,7 +28,7 @@ const pulse3D = keyframes`
   }
 `;
 
-const Footer = ({ bgColor = "#1e1e2f", textColor = "#eee" }) => {
+const Footer = ({ bgColor = " #F9DCC4 ", textColor = "#eee" }) => {
   const theme = useTheme();
 
   return (
@@ -44,7 +44,7 @@ const Footer = ({ bgColor = "#1e1e2f", textColor = "#eee" }) => {
       }}
     >
       <Typography variant="h5" fontWeight="bold" gutterBottom sx={{ mb: 1 }}>
-        Your Company
+        Muskan Jhedu
       </Typography>
       <Typography variant="body2" sx={{ mb: 3, opacity: 0.75 }}>
         &copy; {new Date().getFullYear()} Muskan Jhedu. All rights reserved.
