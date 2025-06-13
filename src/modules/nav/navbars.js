@@ -122,6 +122,10 @@ const Navbars = () => {
                     offset={-70}
                   >
                     <Button
+                      disableElevation
+                      disableFocusRipple
+                      disableTouchRipple
+                      disableRipple
                       sx={{
                         color: "#2F1B1B",
                         fontSize: "16px",

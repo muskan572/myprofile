@@ -28,7 +28,7 @@ const pulse3D = keyframes`
   }
 `;
 
-const Footer = ({ bgColor = " #F9DCC4 ", textColor = "#eee" }) => {
+const Footer = ({ bgColor = "rgb(255, 222, 195) ", textColor = "#8B4513" }) => {
   const theme = useTheme();
 
   return (
@@ -140,7 +140,10 @@ const Footer = ({ bgColor = " #F9DCC4 ", textColor = "#eee" }) => {
         >
           <GitHub />
         </IconButton>
-        <IconButton aria-label="Email" href="mailto:youremail@example.com">
+        <IconButton
+          aria-label="Email"
+          href="mailto:muskanchhimpa2022@gmail.com"
+        >
           <Email />
         </IconButton>
       </Stack>
