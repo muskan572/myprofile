@@ -9,7 +9,6 @@ import {
 } from "@mui/material";
 import {
   Facebook,
-  Twitter,
   Instagram,
   LinkedIn,
   GitHub,
@@ -51,31 +50,6 @@ const Footer = ({ bgColor = "rgb(255, 222, 195) ", textColor = "#8B4513" }) => {
       </Typography>
 
       {/* Navigation Links */}
-      <Stack
-        direction="row"
-        spacing={4}
-        justifyContent="center"
-        sx={{
-          mb: 3,
-          flexWrap: "wrap",
-          "& a": {
-            color: textColor,
-            fontWeight: 600,
-            position: "relative",
-            textDecoration: "none",
-            transition: "color 0.3s ease",
-            "&:hover": {
-              color: theme.palette.primary.light,
-              animation: `${pulse3D} 0.8s ease-in-out`,
-            },
-          },
-        }}
-      >
-        <Link href="#home">Home</Link>
-        <Link href="#about">About</Link>
-        <Link href="#services">Services</Link>
-        <Link href="#contact">Contact</Link>
-      </Stack>
 
       {/* Social Icons */}
       <Stack
@@ -102,23 +76,16 @@ const Footer = ({ bgColor = "rgb(255, 222, 195) ", textColor = "#8B4513" }) => {
       >
         <IconButton
           aria-label="Facebook"
-          href="https://facebook.com"
+          href="https://www.facebook.com/profile.php?id=61552203032346"
           target="_blank"
           rel="noopener"
         >
           <Facebook />
         </IconButton>
-        <IconButton
-          aria-label="Twitter"
-          href="https://twitter.com"
-          target="_blank"
-          rel="noopener"
-        >
-          <Twitter />
-        </IconButton>
+
         <IconButton
           aria-label="Instagram"
-          href="https://instagram.com"
+          href="https://www.instagram.com/muskan_jhedu/"
           target="_blank"
           rel="noopener"
         >
@@ -126,7 +93,7 @@ const Footer = ({ bgColor = "rgb(255, 222, 195) ", textColor = "#8B4513" }) => {
         </IconButton>
         <IconButton
           aria-label="LinkedIn"
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/muskan-jhedu-b49a49276/"
           target="_blank"
           rel="noopener"
         >
@@ -134,7 +101,7 @@ const Footer = ({ bgColor = "rgb(255, 222, 195) ", textColor = "#8B4513" }) => {
         </IconButton>
         <IconButton
           aria-label="GitHub"
-          href="https://github.com"
+          href="https://github.com/muskan572"
           target="_blank"
           rel="noopener"
         >

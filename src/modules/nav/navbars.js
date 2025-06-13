@@ -119,7 +119,7 @@ const Navbars = () => {
                     to={item.toLowerCase().replace(" ", "")}
                     smooth={true}
                     duration={500}
-                    offset={-70}
+                    offset={-80}
                   >
                     <Button
                       disableElevation
