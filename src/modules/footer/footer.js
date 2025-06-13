@@ -47,7 +47,7 @@ const Footer = ({ bgColor = "#1e1e2f", textColor = "#eee" }) => {
         Your Company
       </Typography>
       <Typography variant="body2" sx={{ mb: 3, opacity: 0.75 }}>
-        &copy; {new Date().getFullYear()} Your Company. All rights reserved.
+        &copy; {new Date().getFullYear()} Muskan Jhedu. All rights reserved.
       </Typography>
 
       {/* Navigation Links */}
