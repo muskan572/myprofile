@@ -26,7 +26,15 @@ import Person2Icon from "@mui/icons-material/Person2";
 import { Homepage } from "../home";
 import { Link as ScrollLink } from "react-scroll";
 
-const navItems = ["Home", "About Me", "Education", "Skills", "Contact"];
+const navItems = [
+  "Home",
+  "About Me",
+  "Education",
+  "Skills",
+  "Contact",
+  "Projects",
+  "Achievements",
+];
 
 const Navbars = () => {
   const theme = useTheme();
@@ -97,7 +105,7 @@ const Navbars = () => {
                         <ListItemButton>
                           <ListItemText
                             primary={item}
-                            primaryTypographyProps={{
+                            primaryTypographyProp={{
                               fontSize: 18,
                               fontWeight: "medium",
                               color: "#2F1B1B",

@@ -6,7 +6,8 @@ import { useEffect } from "react";
 import About from "../about/about";
 import { Education } from "../education/education";
 import { Skills } from "../skills/skills";
-import Footer from "../footer/footer";
+import Projects from "../Projects/Projects";
+import Contact from "../contact/contact";
 
 const Homepage = () => {
   useEffect(() => {
@@ -101,8 +102,9 @@ const Homepage = () => {
       </Box>
       <About />
       <Education />
+      <Projects />
       <Skills />
-      <Footer />
+      <Contact />
     </>
   );
 };

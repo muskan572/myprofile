@@ -1,12 +1,4 @@
-import React from "react";
-import {
-  Box,
-  Typography,
-  Link,
-  Stack,
-  useTheme,
-  IconButton,
-} from "@mui/material";
+import { Box, Typography, Stack, useTheme, IconButton } from "@mui/material";
 import {
   Facebook,
   Instagram,
@@ -27,12 +19,15 @@ const pulse3D = keyframes`
   }
 `;
 
-const Footer = ({ bgColor = "rgb(255, 222, 195) ", textColor = "#8B4513" }) => {
+const Contact = ({
+  bgColor = "rgb(255, 222, 195) ",
+  textColor = "#8B4513",
+}) => {
   const theme = useTheme();
 
   return (
     <Box
-      component="footer"
+      id="contact"
       sx={{
         background: bgColor,
         color: textColor,
@@ -118,4 +113,4 @@ const Footer = ({ bgColor = "rgb(255, 222, 195) ", textColor = "#8B4513" }) => {
   );
 };
 
-export default Footer;
+export default Contact;
