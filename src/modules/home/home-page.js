@@ -8,6 +8,7 @@ import { Education } from "../education/education";
 import { Skills } from "../skills/skills";
 import Projects from "../Projects/Projects";
 import Contact from "../contact/contact";
+import Achievements from "../achievements/achievements";
 
 const Homepage = () => {
   useEffect(() => {
@@ -103,6 +104,7 @@ const Homepage = () => {
       <About />
       <Education />
       <Projects />
+      <Achievements />
       <Skills />
       <Contact />
     </>

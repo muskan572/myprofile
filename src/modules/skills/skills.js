@@ -45,23 +45,25 @@ const Skills = () => {
         minHeight: "100vh",
       }}
     >
-      <Typography
-        variant="h3"
-        sx={{
-          fontWeight: "bold",
-          fontFamily: "cursive",
-          color: "#4D3C2D",
-          mb: 5,
-          display: "inline-block",
-          px: 3,
-          py: 1,
-          background: "#f0eac2",
-          borderRadius: "30px",
-          boxShadow: "0 5px 15px rgba(0,0,0,0.1)",
-        }}
-      >
-        Skills
-      </Typography>
+      <Box sx={{ textAlign: "center", mb: 5 }}>
+        <Typography
+          variant="h3"
+          sx={{
+            fontWeight: "bold",
+            fontFamily: "cursive",
+            color: "#4D3C2D",
+            mb: 5,
+            display: "inline-block",
+            px: 3,
+            py: 1,
+            background: "#f0eac2",
+            borderRadius: "30px",
+            boxShadow: "0 5px 15px rgba(0,0,0,0.1)",
+          }}
+        >
+          Skills
+        </Typography>
+      </Box>
 
       <Grid container justifyContent="center" data-aos="fade-up">
         <Grid item xs={12} md={8}>
