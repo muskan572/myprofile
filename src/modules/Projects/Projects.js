@@ -48,11 +48,11 @@ const projects = [
     link: "https://github.com/muskan572/scoopwise",
   },
   {
-    title: "Excel Analytics",
-    subtitle: "Excel File Visualization",
+    title: "BrandName",
+    subtitle: "Web development Agency",
     description:
-      "Upload Excel files and visualize data using charts, tables & filters. Built with React.",
-    link: "https://github.com/muskan572/excel-analytics",
+      "I recently worked on a Web Development Agency website – designed and built modern design, responsiveness, and clear service offerings. 🔧 Tech Stack Used: HTML & CSS",
+    link: "https://github.com/muskan572/BRANDNAME",
   },
   {
     title: "Food Website",
