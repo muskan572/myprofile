@@ -1,5 +1,4 @@
 import { Box, Typography, Paper } from "@mui/material";
-import React from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
