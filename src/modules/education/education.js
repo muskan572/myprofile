@@ -30,15 +30,24 @@ const educationData = [
     year: "2022–2025",
     percentage: "~72%",
     board: "Panjab University",
-    school: "Gopichand Arya Mahilla College",
+    school: "Gopichand Arya Mahila College",
     location: "Abohar, Punjab",
     icon: <LaptopChromebookIcon sx={{ fontSize: 50, color: "#8B4513" }} />,
+  },
+  {
+    title: "MCA",
+    year: "2025–2027",
+    percentage: "Pursuing",
+    board: "J.C. Bose University of Science and Technology, YMCA",
+    school: "Master of Computer Applications",
+    location: "Faridabad, Haryana",
+    icon: <SchoolIcon sx={{ fontSize: 50, color: "#8B4513" }} />,
   },
 ];
 
 const Education = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 1000, once: true });
   }, []);
 
   return (
@@ -58,7 +67,7 @@ const Education = () => {
           fontWeight: "bold",
           fontFamily: "cursive",
           color: "#4D3C2D",
-          mb: 5,
+          mb: 6,
           display: "inline-block",
           px: 3,
           py: 1,
@@ -70,9 +79,9 @@ const Education = () => {
         Education
       </Typography>
 
-      <Grid container spacing={5} justifyContent="center">
+      <Grid container spacing={4} justifyContent="center">
         {educationData.map((item, idx) => (
-          <Grid item xs={12} md={4} key={idx} data-aos="zoom-in">
+          <Grid item xs={12} sm={6} lg={3} key={idx} data-aos="zoom-in">
             <Paper
               elevation={6}
               sx={{
@@ -81,33 +90,72 @@ const Education = () => {
                 backgroundColor: "#f7f2d9",
                 border: "4px solid #d3ceaa",
                 height: "100%",
-                transition: "transform 0.3s",
+                transition: "0.3s ease",
                 "&:hover": {
-                  transform: "scale(1.05)",
+                  transform: "translateY(-8px)",
+                  boxShadow: "0 12px 25px rgba(0,0,0,0.15)",
                 },
               }}
             >
               <Box sx={{ mb: 2 }}>{item.icon}</Box>
+
               <Typography
                 variant="h5"
-                sx={{ fontWeight: "bold", color: "#4D3C2D" }}
+                sx={{
+                  fontWeight: "bold",
+                  color: "#4D3C2D",
+                }}
               >
                 {item.title}
               </Typography>
-              <Typography variant="subtitle1" sx={{ color: "#666", mb: 1 }}>
-                ({item.year})
+
+              <Typography
+                variant="subtitle1"
+                sx={{
+                  color: "#666",
+                  mb: 1,
+                }}
+              >
+                {item.year}
               </Typography>
+
               <Typography
                 variant="h6"
-                sx={{ color: "#333", fontWeight: "500" }}
+                sx={{
+                  color: "#333",
+                  fontWeight: 600,
+                }}
               >
-                {item.percentage}{" "}
-                <span style={{ fontWeight: 400 }}>({item.board})</span>
+                {item.percentage}
               </Typography>
-              <Typography sx={{ mt: 1, color: "#555" }}>
+
+              <Typography
+                sx={{
+                  mt: 1,
+                  fontWeight: 600,
+                  color: "#5A4634",
+                }}
+              >
                 {item.school}
               </Typography>
-              <Typography sx={{ color: "#555" }}>{item.location}</Typography>
+
+              <Typography
+                sx={{
+                  color: "#777",
+                  fontSize: "0.95rem",
+                }}
+              >
+                {item.board}
+              </Typography>
+
+              <Typography
+                sx={{
+                  color: "#555",
+                  mt: 1,
+                }}
+              >
+                {item.location}
+              </Typography>
             </Paper>
           </Grid>
         ))}
